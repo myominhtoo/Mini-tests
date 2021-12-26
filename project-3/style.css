@@ -1,0 +1,19 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background-color:rgba(0,0,0,0.8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+p{
+    color:red;
+    font-size:23px;
+    font-family:'Courier New', Courier, monospace;
+}
