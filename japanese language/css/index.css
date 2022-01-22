@@ -1,0 +1,164 @@
+/* google font api  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;1,200;1,300;1,400&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:boder-box;
+}
+
+/* declaring variables for font-size and color  */
+:root{
+    --dark:rgba(20, 19, 20,0.8);
+    --sakura:rgba(240, 137, 233,1);
+    --snow:rgba(247, 237, 247);
+    --txt:rgba(219, 178, 219,1);
+    --uniq:rgba(99, 4, 99,1);
+    --xl:55px;
+    --lg:45px;
+    --md:35px;
+    --sm:20px;
+    --none:18px;
+    --bold:700;
+    --nobold:300;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#header{
+    min-width:100vw;
+    background-color:var(--snow);
+    box-shadow:1px 1px 3px var(--uniq);
+    transition:0.8s all;
+}
+
+/* .row is being made to use other all places */
+.row{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#header .row{
+    padding:0.1rem 0;
+}
+
+.brand-name{
+    display:flex;
+    gap:10px;
+    transition:0.8s all;
+}
+
+.brand-name img{
+    width:var(--xl);
+    border-radius:10px;
+}
+
+.brand-name h1{
+    color:var(--sakura);
+    font-size:var(--md);
+    font-weight:var(--bold);
+    text-shadow:1px 1px 0 var(--dark);
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    transition:0.8s all;
+}
+
+.nav-links a{
+    text-decoration:none;
+    font-size:var(--sm);
+    color:var(--sakura);
+    letter-spacing:0.5px;
+    transition:0.8s all;
+}
+
+.nav-links a i{
+    display:none;
+}
+
+.nav-links .courses,.nav-links .books{
+    position:relative;
+}
+
+.courses-collapse,.books-collapse{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    align-items:flex-start;
+    padding:0.5rem 1rem;
+    position:absolute;
+    top:50px;
+    z-index:3;
+    background-color:var(--snow);
+    box-shadow:0.5px 0.5px 4px var(--dark);
+    transform:translateX(38%);
+    transition:0.8s all;
+}
+
+.books-collapse{
+    transform:translateX(200%);
+}
+
+.courses-collapse.active,.books-collapse.active{
+    display:flex;
+}
+
+.courses-collpase a{
+    position:absolute;
+    z-index:3;
+    padding:0 1rem;
+}
+
+.nav-links a:hover{
+    text-shadow:1px 1px 0 var(--dark);
+}
+
+.nav-links .home{
+    font-weight:bold;
+    text-shadow:0 0 0.3px var(--dark);
+}
+
+.nav-links .home::after{
+    content:"";
+    width:90%;
+    height:2px;
+    display:block;
+    margin:1px 5px;
+    background-color:var(--uniq);
+    text-shadow:0.1px 0.1px 0 var(--dark);
+}
+
+/* home page */
+#homepage{
+    margin-top:30px;
+    padding:1rem 0;
+}
+
+#homepage .row{
+    gap:1rem;
+}
+
+#homepage .row .image,#homepage .row .content{
+    width:45%;
+    padding:0 0.3rem;
+}
+
+#homepage .row .image img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    box-shadow:1px 1px 1px var(--dark);
+}
+

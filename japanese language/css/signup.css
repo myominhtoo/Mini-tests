@@ -1,0 +1,139 @@
+/* resetting padding & margin */
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+/* declaring variables */
+:root{
+    --bg:rgba(255, 255, 255,0.2);
+    --font:rgba(12, 20, 36,0.8);
+    --cover:rgba(255, 255, 255,1);
+    --txt:rgba(37, 21, 212,0.3);
+}
+
+/* setting font-family  */
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    width:100vw;
+    /* height:100vh; */
+    background-color:var(--bg);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding:2rem 0;
+}
+
+main{
+    width:600px;
+    padding:2rem 3rem;
+    border-top-left-radius:0;
+    border-top-right-radius:5px;
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:5px;
+    border-left:5px dotted var(--font);
+    background-color:var(--cover);
+    box-shadow:1px 1px 3px var(--font);
+
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+    transition:0.8s all;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    position:relative;
+    transition:0.8s all;
+}
+
+form .group{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+.group .input-area{
+    display:flex;
+    gap:20px;
+    align-items: center;
+}
+
+.group label{
+    font-size:25px;
+    color:var(--txt);
+    font-weight:bold;
+    letter-spacing: 1px;
+    text-shadow:0.5px 0.5px 1px var(--font);
+}
+
+.group input{
+    display:block;
+    width:400px;
+    border:none;
+    padding:0.1rem 0.5rem;
+    border-bottom:2px dotted var(--font);
+    font-size:18px;
+    color:var(--font);
+    font-weight:bold;
+}
+
+.group input:focus{
+    outline:none;
+}
+
+.group .input-area label{
+    font-size:20px;
+}
+
+.group .input-area input{
+    display:inline;
+    width:20px;
+}
+
+.btn-submit{
+    width:100px;
+    border:3px dotted var(--txt);
+    border-radius:3px;
+    color:var(--txt);
+    font-weight:bold;
+    background:transparent;
+    text-shadow:0.5px 0.5px 1px var(--font);
+    box-shadow:1px 1px 2px var(--font);
+    transform:translateX(300%);
+
+    transition:0.8s all;
+}
+
+.btn-submit:hover{
+    box-shadow:1px 1px 4px var(--font);
+}
+
+.links-area{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items: center;
+    justify-content:center;
+}
+
+.links-area h3{
+    font-size:30px;
+    color:var(--txt);
+    font-weight:bold;
+    letter-spacing: 1px;
+    text-shadow:0.5px 0.5px 1px var(--font);
+}
+
+.links-area a{
+    font-size:23px;
+    color:var(--txt);
+    font-weight:bold;
+    text-shadow:0.5px 0.5px 1px var(--font);
+    margin-right:5px;
+}

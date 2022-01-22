@@ -1,0 +1,136 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --txt:rgba(36, 171, 173,1);
+    --bgbody:rgba(227, 252, 252,0.5);
+    --bgdark:rgba(25, 26, 26,0.9);
+    --bglight:rgba(227, 252, 252,1);
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color:var(--bgbody);
+
+}
+
+header{
+    width:100%;
+    background-color:var(--bglight);
+    border-bottom:2px solid var(--bgdark);
+    box-shadow:1px 1px 3px #000;
+}
+
+#nav{
+    width:80%;
+    margin:0 auto;
+    padding:0.3rem 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#nav h3{
+    color:var(--txt);
+    font-size:25px;
+    letter-spacing:1px;
+    text-shadow:1px 1px 1px var(--bgdark);
+}
+
+#nav .admin-info{
+    display:flex;
+    gap:50px;
+}
+
+.admin-info a{
+    color:var(--txt);
+    font-size:20px;
+    text-shadow:1px 1px 1px var(--bgdark);
+    transition:0.8s all;
+}
+
+.admin-info a:hover{
+    text-shadow:1px 1px 2px var(--bgdark);
+}
+
+#nav .admin-info .setting:hover{
+    transform:rotate(90deg);
+}
+
+.frame{
+    width:95%;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    margin-top:30px;
+}
+
+.frame .navs{
+    width:25%;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    align-items:flex-start;
+}
+
+.navs .controls,.navs .actions{
+    width:90%;
+    padding: 1rem;
+    display:flex;
+    flex-direction:column;
+    gap:3px;
+    background-color:var(--bglight);
+    border-radius:3px;
+    box-shadow:1px 1px 3px #000;
+}
+
+.navs .controls a,.navs .actions a{
+    display:block;
+    width:100%;
+    text-decoration:none;
+    color:var(--txt);
+    font-size:18px;
+    padding:0.5rem 1.5rem;
+    background-color:var(--bgdark);
+}
+
+.navs .controls .dashboard{
+    background-color:rgba(25, 26, 26,1);
+}
+
+.navs .controls h3,.navs .actions h3{
+    color:var(--txt);
+    font-size:25px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.frame .main-area{
+    width:90%;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.main-area .new-version{
+    color:#000;
+    font-size:20px;
+    letter-spacing:1.5px;
+    font-weight:bold;
+    background-color:var(--bglight);
+    padding:1rem 1.5rem;
+    border-top-left-radius: 0;
+    border-bottom-right-radius:0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow:1px 1px 3px var(--bgdark);
+}
+
+
+
+
