@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogByLio</title>
+    <link href="./img/icon.png" rel="icon" type="image/png"/>
+    <title>Blog By Lio</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <!-- fontawesome cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" type="text/css"/>
+    <!-- google font api -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <!-- style css -->
+    <link href="./css/dashboard.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <!-- brand -->
+    <div class="top-bar">
+        <div class="brand">
+            <img src="./img/icon.png" class="brand-icon" alt="brand/icon">
+            <h3 class="brand-name">BlogByLio</h3>
+        </div>
+
+        <div class="user">
+            <h6 class="name">username</h6>
+            <img src="./img/userimg.jpg" alt="userimg" class="user-img">
+            <a href="#" class="menu"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+    </div>
+
+    <!-- sidebar  -->
+    <section id="sidebar">
+            <div class="nav-items">
+                <a href="#" class="dashboard"><i class="fas fa-user-shield"></i> Dashboard</a>
+
+                <a href="#"><i class="far fa-user"></i> Users</a>
+                <a href="#"><i class="far fa-envelope"></i> Mails</a>
+                <a href="#"><i class="fas fa-bug"></i> Reports</a>
+                <a href="#"><i class="fas fa-plus"></i> Create Post</a>
+                <a href="#"><i class="far fa-edit"></i> Update Post</a>
+            </div>
+
+            <div class="nav-controls">
+                <a href="#" class="settings"><i class="fas fa-tools"></i> Settings</a>
+
+                <a href="#" class="settings-admin"><i class="fas fa-user-cog"></i> Admin settings</a>
+                <a href="#" class="log-out"><i class="fas fa-sign-out-alt"></i> Log out</a>
+
+                <!-- <input type="checkbox" name="light-dark" id="mode"/> -->
+            </div>
+    </section>
+    
+    <!--- main -->
+    <main id="main">
+        <div class="news">
+            <marquee behavior="" direction="">
+                New versions of dashboard is available <a href="#"> here! </a >Download Now! Hey How about using our services?
+            </marquee>
+        </div>
+
+        <div class="year-records">
+            <div class="row">
+                <div class="col">
+                   <div class="year">
+                       <h1>2020</h1>
+                   </div>
+
+                   <div class="info">
+                    <div class="">
+                        <pre><i class="fas fa-users"></i> Users</pre><p>19,321</p>
+                      </div>
+
+                      <div class="">
+                        <pre><i class="far fa-eye"></i> View</pre><p>30,248</p>
+                      </div> 
+
+                      <div class="">
+                        <pre><i class="fas fa-server"></i> Server</pre><p> 56</p>
+                      </div> 
+
+                      <div class="">
+                        <pre><i class="fas fa-dollar-sign"></i> Profit</pre><p> 60%</p>
+                      </div>
+
+                     <div class="">
+                       <pre><i class="fas fa-crosshairs"></i> Loss</pre><p>3%</p>
+                     </div>
+                   </div>
+                </div>
+
+                <div class="col">
+                    <div class="year">
+                        <h1>2021</h1>
+                    </div>
+ 
+                    <div class="info">
+                        <div class="">
+                            <pre><i class="fas fa-users"></i> Users</pre><p>79,321</p>
+                          </div>
+   
+                          <div class="">
+                            <pre><i class="far fa-eye"></i> View</pre><p>103,248</p>
+                          </div> 
+   
+                          <div class="">
+                            <pre><i class="fas fa-server"></i> Server</pre><p> 44</p>
+                          </div> 
+   
+                          <div class="">
+                            <pre><i class="fas fa-dollar-sign"></i> Profit</pre><p> 60%</p>
+                          </div>
+   
+                         <div class="">
+                           <pre><i class="fas fa-crosshairs"></i> Loss</pre><p>30%</p>
+                         </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="year">
+                        <h1>2022</h1>
+                    </div>
+ 
+                    <div class="info">
+                       <div class="">
+                         <pre><i class="fas fa-users"></i> Users</pre><p>109,321</p>
+                       </div>
+
+                       <div class="">
+                         <pre><i class="far fa-eye"></i> View</pre><p>193,248</p>
+                       </div> 
+
+                       <div class="">
+                         <pre><i class="fas fa-server"></i> Server</pre><p> 56</p>
+                       </div> 
+
+                       <div class="">
+                         <pre><i class="fas fa-dollar-sign"></i> Profit</pre><p> 60%</p>
+                       </div>
+
+                      <div class="">
+                        <pre><i class="fas fa-crosshairs"></i> Loss</pre><p>3%</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="data-records">
+            <div class="row">
+                <div class="col">
+                   <h1>Users according to Gender</h1>
+                   <div class="frame">
+                       <div class="group">
+                            <label for="">Male</label>
+                            <p><i class="male"></i></p>
+                       </div>
+
+                       <div class="group">
+                            <label for="">Female</label>
+                            <p><i class="female"></i></p>
+                       </div>
+
+                       <div class="group">
+                           <label for="">Others</label>
+                           <p><i class="other"></i></p>
+                       </div>
+                   </div>
+                </div>
+
+                <div class="col">
+                    <h1>Users according to Age</h1>
+                    <div class="frame">
+                        <div class="group">
+                            <label for="">Below 18</label>
+                            <p><i class="below18"></i></p>
+                        </div>
+
+                        <div class="group">
+                            <label for="">Above 18</label>
+                            <p><i class="above18"></i></p>
+                        </div>
+
+                        <div class="group">
+                            <label for="">Above 30</label>
+                            <p><i class="above30"></i></p>
+                        </div>
+
+                        <div class="group">
+                            <label for="">Above 50</label>
+                            <p><i class="above50"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div href="" class="copyright">All terms are copy righted <i class="far fa-copyright"></i> <span>2022</span> </div>
+
+        <div class="rules">
+            <a href="#">Terms</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+</body>
+</html>
