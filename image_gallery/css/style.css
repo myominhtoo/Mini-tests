@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    transition:1s all;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    width:100%;
+    font-family: 'Poppins', sans-serif;
+    background-color:rgba(0,0,0,0.7);
+}
+
+#image-container{
+    width:100%;
+    padding:0.1rem 0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:0.5rem;
+}
+
+
+#image-container #left-arrow,#image-container #right-arrow{
+    color:white;
+    font-size:50px;
+    text-shadow:0 1px 1px #000;
+    position:absolute;
+}
+
+#left-arrow{
+    left:10%;
+    top:50%;
+}
+
+#right-arrow{
+    right:10%;
+    top:50%;
+}
+
+#image-container .title{
+    color:white;
+    letter-spacing:1.5px;
+    font-size:35px;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-shadow:0 1px 1px #000;
+}
+
+#image-container img{
+    border-radius:3px;
+    box-shadow:0 0.2px 2px #000;
+    width:800px;
+    height:500px;
+    transition:1s all;
+}
+#image-container img.select{
+    box-shadow:0 5px 10px purple;
+}
+
+#menu{
+    width:100%;
+}
+
+#menu .row{
+    width:99%;
+    margin:0 auto;
+    overflow-x:hidden;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#menu .row .image img{
+    width:130px;
+    height:120px;
+    margin-top:20px;
+    margin-left:5px;
+    box-shadow:0 0.1px 1px #000;
+    transition:1s all;
+}
+
+#menu .row .image img.select{
+    box-shadow:0 5px 10px purple;
+}
