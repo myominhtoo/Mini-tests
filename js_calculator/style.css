@@ -1,0 +1,29 @@
+
+#container{
+    width:30%;
+}
+
+body{
+    background-color:#eee;
+}
+
+.bar{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    gap:10px;
+    align-items:center;
+}
+
+.col{
+    color:white;
+    font-size:25px;
+    font-weight:bold;
+    text-align:center;
+    box-shadow:0 0.2px 1px #fff;
+    border-radius:2px;
+}
+
+.col:hover{
+    box-shadow:0 0.3px 2px #fff;
+}
